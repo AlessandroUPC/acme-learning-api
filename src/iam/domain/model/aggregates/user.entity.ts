@@ -9,7 +9,7 @@ export class User extends AggregateRoot {
   @Column()
   username: string;
   @Column(() => EmailAddress)
-  email: EmailAddress;
+  email: string;
   @Column({ name: 'password' })
   password: string;
 
